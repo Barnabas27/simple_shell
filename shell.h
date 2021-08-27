@@ -1,5 +1,5 @@
-#ifndef SHELL_H_
-#define SHELL_H_
+#ifndef SHELL_H
+#define SHELL_H
 
 #include <stdio.h>
 #include <unistd.h>
@@ -13,9 +13,8 @@
 #include <errno.h>
 #include <signal.h>
 
-/* Environ global variable */
 extern char **environ;
-/* Function Prototypes */
+
 char *readline(void);
 char **splitline(char *line);
 int execute(char **args);
@@ -31,4 +30,4 @@ int _strlen(char *s);
 int _strncmp(char *str1, char *str2, int n);
 
 
-#endif /* SHELL_H */
+#endif
